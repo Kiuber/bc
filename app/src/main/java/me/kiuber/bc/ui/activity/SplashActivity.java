@@ -8,6 +8,8 @@ import android.support.annotation.Nullable;
 
 import java.util.TimerTask;
 
+import cn.bmob.v3.Bmob;
+import cn.smssdk.SMSSDK;
 import me.kiuber.bc.R;
 
 
@@ -23,7 +25,18 @@ public class SplashActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        initBmob();
+        initMob();
         jump2Main();
+    }
+
+    private void initMob() {
+//        SMSSDK.initSDK(this, "1ba78e857a348", "e388c8d4fe41d358fcbeb83a089ee170");
+        SMSSDK.initSDK(this, "139216e4958f6", "63512a2fcc9c9e2f5c00bbdce60d920e");
+    }
+
+    private void initBmob() {
+        Bmob.initialize(this, "de841c91ae694abb3e31868c64d0a1c7", "Bmob");
     }
 
     private void jump2Main() {
