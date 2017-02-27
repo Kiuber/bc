@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="me.kiuber.bc.MainActivity">
+    tools:context="me.kiuber.bc.ui.activity.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
