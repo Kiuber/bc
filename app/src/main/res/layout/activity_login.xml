@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/layout_bg"
     android:orientation="vertical">
 
     <LinearLayout
@@ -89,6 +90,49 @@
                     android:gravity="end"
                     android:padding="@dimen/normal_space"
                     android:text="立即注册 >" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_space"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_sina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/normal_space"
+                    android:drawableTop="@drawable/selector_sina"
+                    android:gravity="center"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="新浪微博" />
+
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/normal_space"
+                    android:drawableTop="@drawable/selector_qq"
+                    android:gravity="center"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="腾讯QQ" />
+
+                <TextView
+                    android:id="@+id/tv_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/normal_space"
+                    android:drawableTop="@drawable/selector_wechat"
+                    android:gravity="center"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="微信" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

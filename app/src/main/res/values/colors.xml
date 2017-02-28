@@ -9,4 +9,6 @@
     <color name="gainsboro">#dcdcdc</color><!--淡灰色 -->
 
     <color name="layout_default_bg_color">#fafafa</color>
+    <color name="line">#ebebeb</color>
+    <color name="layout_bg">#f0eff5</color>
 </resources>

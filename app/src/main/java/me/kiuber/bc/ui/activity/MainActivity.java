@@ -2,9 +2,9 @@ package me.kiuber.bc.ui.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
 
@@ -15,7 +15,7 @@ import me.kiuber.bc.ui.fragment.DynamicFragment;
 import me.kiuber.bc.ui.fragment.FunctionFragment;
 import me.kiuber.bc.ui.fragment.MyFragment;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends FragmentActivity implements View.OnClickListener {
 
     private ViewPager mVpContent;
     private RadioButton mRbFunction;
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fragments.add(new MyFragment());
         FragmentPagerAdapter fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager(), fragments);
         mVpContent.setAdapter(fragmentPagerAdapter);
+        mRbFunction.setChecked(true);
     }
 
     @Override

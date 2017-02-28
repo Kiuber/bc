@@ -22,9 +22,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
+            android:drawablePadding="@dimen/little_space"
+            android:drawableTop="@drawable/ic_tab_function"
             android:gravity="center"
             android:padding="@dimen/normal_space"
-            android:text="功能" />
+            android:text="功能"
+            android:textColor="@drawable/selector_tab_text_color" />
 
         <RadioButton
             android:id="@+id/rb_dynamic"
@@ -32,9 +35,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
+            android:drawablePadding="@dimen/little_space"
+            android:drawableTop="@drawable/ic_tab_dynamic"
             android:gravity="center"
             android:padding="@dimen/normal_space"
-            android:text="动态" />
+            android:text="动态"
+            android:textColor="@drawable/selector_tab_text_color" />
 
         <RadioButton
             android:id="@+id/rb_my"
@@ -42,9 +48,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
+            android:drawablePadding="@dimen/little_space"
+            android:drawableTop="@drawable/ic_tab_my"
             android:gravity="center"
             android:padding="@dimen/normal_space"
-            android:text="我的" />
+            android:text="我的"
+            android:textColor="@drawable/selector_tab_text_color" />
     </RadioGroup>
 
 </LinearLayout>

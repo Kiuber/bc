@@ -102,6 +102,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         if (save) {
             Toast.makeText(this, "登录成功~", Toast.LENGTH_SHORT).show();
             finish();
+            setResult(RESULT_OK, new Intent().putExtra("nickname", user_profile.getNickname()));
         } else {
             Toast.makeText(this, "用户信息保存失败~", Toast.LENGTH_SHORT).show();
         }
