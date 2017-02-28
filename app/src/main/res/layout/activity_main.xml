@@ -55,5 +55,4 @@
             android:text="我的"
             android:textColor="@drawable/selector_tab_text_color" />
     </RadioGroup>
-
 </LinearLayout>

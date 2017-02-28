@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatEditText;
 import android.view.View;
 import android.widget.TextView;
@@ -28,7 +30,7 @@ import me.kiuber.bc.bean.User_Profile;
  * Created by Kiuber on 2017/2/27 0027.
  */
 
-public class RegisterActivity extends Activity implements View.OnClickListener {
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatEditText mAcetPhone;
     private TextView mTvSendCode;
@@ -44,6 +46,11 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_register);
         initView();
         initSMSHandler();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
     private void initSMSHandler() {

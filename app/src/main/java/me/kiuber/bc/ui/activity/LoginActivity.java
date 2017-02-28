@@ -87,6 +87,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     private void saveUserInfo(User_Profile user_profile) {
         ArrayList<String> keys = new ArrayList<>();
+        keys.add("objectId");
         keys.add("phone");
         keys.add("uid");
         keys.add("nickname");
@@ -96,7 +97,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         values.add(user_profile.getPhone());
         values.add(user_profile.getUid());
         values.add(user_profile.getNickname());
-        values.add(user_profile.getName());
+        values.add(user_profile.getObjectId());
 
         boolean save = SharedPreferenceUtil.putMultiple(this, "app_config", keys, values);
         if (save) {
